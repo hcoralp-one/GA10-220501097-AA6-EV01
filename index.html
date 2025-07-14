@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GA10-220501097-AA6-EV01 - Despliegue Web</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>GA10-220501097-AA6-EV01 - Despliegue Web</h1>
+    <p>Actividad académica de despliegue en plataformas gratuitas</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="fade-in">
+      <h2>Bienvenido</h2>
+      <p>Esta plantilla fue desarrollada para la actividad de despliegue web usando tecnologías HTML, CSS y JavaScript.</p>
+      <button onclick="mostrarAlerta()">Haz clic para ver una alerta</button>
+    </section>
+
+    <section class="slide-in">
+      <h2>Galería de Prueba</h2>
+      <div class="galeria">
+        <img src="https://picsum.photos/id/1015/300/200" alt="Paisaje 1" onclick="abrirLightbox(this)">
+        <img src="https://picsum.photos/id/1016/300/200" alt="Paisaje 2" onclick="abrirLightbox(this)">
+        <img src="https://picsum.photos/id/1018/300/200" alt="Paisaje 3" onclick="abrirLightbox(this)">
+      </div>
+    </section>
+
+    <section class="fade-in">
+      <h2>Ventajas del Despliegue Web</h2>
+      <ul>
+        <li>Acceso público desde cualquier lugar</li>
+        <li>Pruebas reales en navegadores</li>
+        <li>Portafolio profesional en línea</li>
+      </ul>
+    </section>
+
+    <section class="slide-in">
+      <h2>Recursos Útiles</h2>
+      <p>Consulta recursos para aprender más sobre hosting gratuito y desarrollo web:</p>
+      <ul>
+        <li><a href="https://pages.github.com/" target="_blank">GitHub Pages</a></li>
+        <li><a href="https://www.infinityfree.com" target="_blank">InfinityFree</a></li>
+        <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a></li>
+      </ul>
+    </section>
+
+    <div id="alerta" class="alerta">¡Esta es una alerta animada de ejemplo!</div>
+    <div id="lightbox" class="lightbox">
+      <span class="cerrar" onclick="cerrarLightbox()">&times;</span>
+      <img class="lightbox-contenido" id="imgAmpliada" src="" alt="">
+    </div>
+  </main>
+
+  <button onclick="scrollToTop()" id="btnArriba" title="Volver arriba">↑</button>
+
+  <footer>
+    <p>&copy; 2025 - Sitio de prueba por HC</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
